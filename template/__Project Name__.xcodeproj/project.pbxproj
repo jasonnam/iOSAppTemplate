@@ -20,6 +20,13 @@
 			remoteGlobalIDString = EC66660820D4DBF000F4FDDF;
 			remoteInfo = "__Product Name__";
 		};
+		ECA1DD1220D4ECBB00E6743A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6665E720D4D47500F4FDDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC66660820D4DBF000F4FDDF;
+			remoteInfo = "__Product Name__";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,8 @@
 		EC66662620D4E03F00F4FDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECA1DCFC20D4E9D400E6743A /* __Product Name__Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "__Product Name__Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA1DD0620D4EB7100E6743A /* Main-Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Main-Test-Info.plist"; sourceTree = "<group>"; };
+		ECA1DD0D20D4ECBB00E6743A /* __Product Name__UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "__Product Name__UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA1DD1920D4EF8800E6743A /* Main-UITest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Main-UITest-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ECA1DCF920D4E9D400E6743A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA1DD0A20D4ECBB00E6743A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,6 +82,7 @@
 			children = (
 				EC66660920D4DBF000F4FDDF /* __Product Name__.app */,
 				ECA1DCFC20D4E9D400E6743A /* __Product Name__Tests.xctest */,
+				ECA1DD0D20D4ECBB00E6743A /* __Product Name__UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +92,7 @@
 			children = (
 				EC66661C20D4DFE300F4FDDF /* Main */,
 				ECA1DD0720D4EBA800E6743A /* MainTests */,
+				ECA1DD1720D4EF6000E6743A /* MainUITests */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -93,6 +111,7 @@
 				EC66662220D4E01D00F4FDDF /* Main-Info-Release.plist */,
 				EC66662320D4E01D00F4FDDF /* Main-Info-Debug.plist */,
 				ECA1DD0620D4EB7100E6743A /* Main-Test-Info.plist */,
+				ECA1DD1920D4EF8800E6743A /* Main-UITest-Info.plist */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -111,6 +130,13 @@
 			children = (
 			);
 			path = MainTests;
+			sourceTree = "<group>";
+		};
+		ECA1DD1720D4EF6000E6743A /* MainUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +177,24 @@
 			productReference = ECA1DCFC20D4E9D400E6743A /* __Product Name__Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		ECA1DD0C20D4ECBB00E6743A /* __Product Name__UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA1DD1420D4ECBB00E6743A /* Build configuration list for PBXNativeTarget "__Product Name__UITests" */;
+			buildPhases = (
+				ECA1DD0920D4ECBB00E6743A /* Sources */,
+				ECA1DD0A20D4ECBB00E6743A /* Frameworks */,
+				ECA1DD0B20D4ECBB00E6743A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA1DD1320D4ECBB00E6743A /* PBXTargetDependency */,
+			);
+			name = "__Product Name__UITests";
+			productName = "__Product Name__UITests";
+			productReference = ECA1DD0D20D4ECBB00E6743A /* __Product Name__UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +209,10 @@
 						CreatedOnToolsVersion = 9.4;
 					};
 					ECA1DCFB20D4E9D400E6743A = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = EC66660820D4DBF000F4FDDF;
+					};
+					ECA1DD0C20D4ECBB00E6743A = {
 						CreatedOnToolsVersion = 9.4;
 						TestTargetID = EC66660820D4DBF000F4FDDF;
 					};
@@ -185,6 +233,7 @@
 			targets = (
 				EC66660820D4DBF000F4FDDF /* __Product Name__ */,
 				ECA1DCFB20D4E9D400E6743A /* __Product Name__Tests */,
+				ECA1DD0C20D4ECBB00E6743A /* __Product Name__UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +249,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ECA1DCFA20D4E9D400E6743A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA1DD0B20D4ECBB00E6743A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -224,6 +280,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECA1DD0920D4ECBB00E6743A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -231,6 +294,11 @@
 			isa = PBXTargetDependency;
 			target = EC66660820D4DBF000F4FDDF /* __Product Name__ */;
 			targetProxy = ECA1DD0120D4E9D400E6743A /* PBXContainerItemProxy */;
+		};
+		ECA1DD1320D4ECBB00E6743A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC66660820D4DBF000F4FDDF /* __Product Name__ */;
+			targetProxy = ECA1DD1220D4ECBB00E6743A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +483,38 @@
 			};
 			name = Release;
 		};
+		ECA1DD1520D4ECBB00E6743A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Info/Main-UITest-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "__Product Name__";
+			};
+			name = Debug;
+		};
+		ECA1DD1620D4ECBB00E6743A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Info/Main-UITest-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "__Product Name__";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -441,6 +541,15 @@
 			buildConfigurations = (
 				ECA1DD0420D4E9D400E6743A /* Debug */,
 				ECA1DD0520D4E9D400E6743A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA1DD1420D4ECBB00E6743A /* Build configuration list for PBXNativeTarget "__Product Name__UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA1DD1520D4ECBB00E6743A /* Debug */,
+				ECA1DD1620D4ECBB00E6743A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
