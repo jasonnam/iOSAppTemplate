@@ -1,2 +1,2 @@
 #!/bin/sh
-(cd $FLINT_OUTPUT_PATH && exec pod install)
+(cd $FLINT_OUTPUT_PATH && exec summon/bin pod install)
