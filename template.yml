@@ -1,3 +1,4 @@
+description: iOS App Template
 variables:
   - name: Project Name
   - name: Organization Name
