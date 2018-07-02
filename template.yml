@@ -4,5 +4,6 @@ variables:
   - name: BundleID
   - name: Creator Name
 posthooks:
+  - init_summon_bin.sh
   - pod_install.sh
   - git_init.sh
