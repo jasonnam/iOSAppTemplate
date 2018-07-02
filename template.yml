@@ -2,6 +2,7 @@ variables:
   - name: Project Name
   - name: Organization Name
   - name: BundleID
+  - name: Creator Name
 posthooks:
   - pod_install.sh
   - git_init.sh
