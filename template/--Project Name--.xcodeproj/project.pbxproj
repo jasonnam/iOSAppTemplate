@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC35014120D56F5C00A172B4 /* --Project Name--.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "--Project Name--.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "--Project Name-- Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35015420D5702800A172B4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC35015520D5702800A172B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC35015920D5703000A172B4 /* Main-UITest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Main-UITest-Info.plist"; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		EC35012920D56D6000A172B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC35014120D56F5C00A172B4 /* --Project Name--.app */,
+				EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */,
 				EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */,
 				EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */,
 			);
@@ -156,7 +156,7 @@
 			);
 			name = "--Project Name--";
 			productName = "--Project Name--";
-			productReference = EC35014120D56F5C00A172B4 /* --Project Name--.app */;
+			productReference = EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EC35016E20D572A400A172B4 /* --Project Name--Tests */ = {
@@ -428,8 +428,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID---Debug";
+				PRODUCT_NAME = "$(TARGET_NAME) Debug";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
