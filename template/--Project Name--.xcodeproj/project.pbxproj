@@ -207,13 +207,16 @@
 				TargetAttributes = {
 					EC35014020D56F5C00A172B4 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 					};
 					EC35016E20D572A400A172B4 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 						TestTargetID = EC35014020D56F5C00A172B4;
 					};
 					EC35017C20D5740600A172B4 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 						TestTargetID = EC35014020D56F5C00A172B4;
 					};
 				};
@@ -430,7 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID---Debug";
 				PRODUCT_NAME = "$(TARGET_NAME) Debug";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -445,7 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -461,7 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/--Project Name-- Debug.app/--Project Name-- Debug";
 			};
 			name = Debug;
@@ -478,7 +481,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/--Project Name-- Debug.app/--Project Name-- Debug";
 			};
 			name = Release;
@@ -494,7 +497,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "--Project Name--";
 			};
 			name = Debug;
@@ -510,7 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "--Project Name--";
 			};
 			name = Release;
