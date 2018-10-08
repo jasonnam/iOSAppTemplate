@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-               BuildableName = "--Project Name--.app"
+               BuildableName = "--Project Name-- AdHoc.app"
                BlueprintName = "--Project Name--"
                ReferencedContainer = "container:--Project Name--.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-            BuildableName = "--Project Name--.app"
+            BuildableName = "--Project Name-- AdHoc.app"
             BlueprintName = "--Project Name--"
             ReferencedContainer = "container:--Project Name--.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-            BuildableName = "--Project Name--.app"
+            BuildableName = "--Project Name-- AdHoc.app"
             BlueprintName = "--Project Name--"
             ReferencedContainer = "container:--Project Name--.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-            BuildableName = "--Project Name--.app"
+            BuildableName = "--Project Name-- AdHoc.app"
             BlueprintName = "--Project Name--"
             ReferencedContainer = "container:--Project Name--.xcodeproj">
          </BuildableReference>
@@ -105,7 +105,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
