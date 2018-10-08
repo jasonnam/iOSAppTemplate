@@ -10,6 +10,7 @@
 		EC35015620D5702800A172B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC35015420D5702800A172B4 /* LaunchScreen.storyboard */; };
 		EC35015720D5702800A172B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC35015520D5702800A172B4 /* Assets.xcassets */; };
 		EC35016920D5704700A172B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35016520D5704700A172B4 /* AppDelegate.swift */; };
+		EC9A0200216BC542002ABC45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC9A0202216BC542002ABC45 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		EC35016520D5704700A172B4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9A0201216BC542002ABC45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				EC35015420D5702800A172B4 /* LaunchScreen.storyboard */,
 				EC35015520D5702800A172B4 /* Assets.xcassets */,
+				EC9A0202216BC542002ABC45 /* Localizable.strings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC35015220D56F5D00A172B4 /* Build configuration list for PBXNativeTarget "--Project Name--" */;
 			buildPhases = (
+				EC9A01F1216BBC82002ABC45 /* Generate Localizable.strings (BartyCrouch) */,
 				EC35013D20D56F5C00A172B4 /* Sources */,
 				EC35013E20D56F5C00A172B4 /* Frameworks */,
 				EC35013F20D56F5C00A172B4 /* Resources */,
@@ -246,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC35015720D5702800A172B4 /* Assets.xcassets in Resources */,
+				EC9A0200216BC542002ABC45 /* Localizable.strings in Resources */,
 				EC35015620D5702800A172B4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +310,24 @@
 			shellPath = /bin/sh;
 			shellScript = "summon/bin carthage outdated --xcode-warnings\n";
 		};
+		EC9A01F1216BBC82002ABC45 /* Generate Localizable.strings (BartyCrouch) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Localizable.strings (BartyCrouch)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "summon/bin bartycrouch code -p \"Sources\" -l \"Assets\" -a\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -344,6 +367,17 @@
 			targetProxy = EC35018220D5740700A172B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC9A0202216BC542002ABC45 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC9A0201216BC542002ABC45 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC35013820D56D6100A172B4 /* Debug */ = {
