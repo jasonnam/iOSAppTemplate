@@ -12,6 +12,8 @@
 		EC35015720D5702800A172B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC35015520D5702800A172B4 /* Assets.xcassets */; };
 		EC35016920D5704700A172B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35016520D5704700A172B4 /* AppDelegate.swift */; };
 		EC9A0200216BC542002ABC45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC9A0202216BC542002ABC45 /* Localizable.strings */; };
+		ECE9360C216C71D4006602B6 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9360A216C71D4006602B6 /* Strings.swift */; };
+		ECE9360D216C71D4006602B6 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9360B216C71D4006602B6 /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9A0201216BC542002ABC45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECE9360A216C71D4006602B6 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		ECE9360B216C71D4006602B6 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				EC35016520D5704700A172B4 /* AppDelegate.swift */,
+				ECE93609216C71D4006602B6 /* SwiftGen */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -154,6 +159,15 @@
 			path = MainTests;
 			sourceTree = "<group>";
 		};
+		ECE93609216C71D4006602B6 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				ECE9360A216C71D4006602B6 /* Strings.swift */,
+				ECE9360B216C71D4006602B6 /* Assets.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,6 +176,7 @@
 			buildConfigurationList = EC35015220D56F5D00A172B4 /* Build configuration list for PBXNativeTarget "--Project Name--" */;
 			buildPhases = (
 				EC9A01F1216BBC82002ABC45 /* Generate Localizable.strings (BartyCrouch) */,
+				ECE93604216C6B86006602B6 /* Generate code (SwiftGen) */,
 				EC35013D20D56F5C00A172B4 /* Sources */,
 				EC35013E20D56F5C00A172B4 /* Frameworks */,
 				EC35013F20D56F5C00A172B4 /* Resources */,
@@ -340,6 +355,24 @@
 			shellPath = /bin/sh;
 			shellScript = "summon/bin bartycrouch code -p \"Sources\" -l \"Assets\" -a\n";
 		};
+		ECE93604216C6B86006602B6 /* Generate code (SwiftGen) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate code (SwiftGen)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFTGEN_PATH=\"Sources/Main/SwiftGen\"\n\nmkdir -p \"$SWIFTGEN_PATH\"\ntouch \"$SWIFTGEN_PATH/Strings.swift\"\ntouch \"$SWIFTGEN_PATH/Assets.swift\"\n\nsummon/bin swiftgen strings -t \"structured-swift4\" -o \"$SWIFTGEN_PATH/Strings.swift\" \"Assets/en.lproj/Localizable.strings\"\nsummon/bin swiftgen xcassets -t \"swift4\" -o \"$SWIFTGEN_PATH/Assets.swift\" \"Assets/Assets.xcassets\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -347,7 +380,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE9360C216C71D4006602B6 /* Strings.swift in Sources */,
 				EC35016920D5704700A172B4 /* AppDelegate.swift in Sources */,
+				ECE9360D216C71D4006602B6 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

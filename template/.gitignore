@@ -34,4 +34,7 @@ Pods/
 carthage/
 
 # summonbin
-summon/
+summon
+
+# SwiftGen
+Sources/Main/SwiftGen/
