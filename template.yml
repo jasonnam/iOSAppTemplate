@@ -6,5 +6,5 @@ variables:
   - name: Creator Name
 posthooks:
   - init_summon_bin.sh
-  - pod_install.sh
+  - bootstrap.sh
   - git_init.sh

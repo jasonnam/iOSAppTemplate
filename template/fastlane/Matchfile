@@ -1,0 +1,4 @@
+git_url("")
+git_branch("")
+readonly(true)
+username("")
