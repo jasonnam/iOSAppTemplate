@@ -38,3 +38,7 @@ summon
 
 # SwiftGen
 Sources/Main/SwiftGen/
+
+# Sourcery
+Sources/Main/Sourcery.swift
+Sources/MainTests/Sourcery.swift

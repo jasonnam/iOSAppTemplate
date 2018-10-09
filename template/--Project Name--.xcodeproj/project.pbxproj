@@ -14,6 +14,8 @@
 		EC9A0200216BC542002ABC45 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC9A0202216BC542002ABC45 /* Localizable.strings */; };
 		ECE9360C216C71D4006602B6 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9360A216C71D4006602B6 /* Strings.swift */; };
 		ECE9360D216C71D4006602B6 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE9360B216C71D4006602B6 /* Assets.swift */; };
+		ECE93617216CBB94006602B6 /* Sourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE93616216CBB94006602B6 /* Sourcery.swift */; };
+		ECE93619216CBBA3006602B6 /* Sourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE93618216CBBA3006602B6 /* Sourcery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		EC9A0201216BC542002ABC45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ECE9360A216C71D4006602B6 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		ECE9360B216C71D4006602B6 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		ECE93616216CBB94006602B6 /* Sourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
+		ECE93618216CBBA3006602B6 /* Sourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 			children = (
 				EC35016520D5704700A172B4 /* AppDelegate.swift */,
 				ECE93609216C71D4006602B6 /* SwiftGen */,
+				ECE93616216CBB94006602B6 /* Sourcery.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		EC35016620D5704700A172B4 /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
+				ECE93618216CBBA3006602B6 /* Sourcery.swift */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			buildPhases = (
 				EC9A01F1216BBC82002ABC45 /* Generate Localizable.strings (BartyCrouch) */,
 				ECE93604216C6B86006602B6 /* Generate code (SwiftGen) */,
+				ECE93614216CA336006602B6 /* Generate code (Sourcery) */,
 				EC35013D20D56F5C00A172B4 /* Sources */,
 				EC35013E20D56F5C00A172B4 /* Frameworks */,
 				EC35013F20D56F5C00A172B4 /* Resources */,
@@ -196,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC35017620D572A500A172B4 /* Build configuration list for PBXNativeTarget "--Project Name--Tests" */;
 			buildPhases = (
+				ECE93615216CA352006602B6 /* Generate code (Sourcery) */,
 				EC35016B20D572A400A172B4 /* Sources */,
 				EC35016C20D572A400A172B4 /* Frameworks */,
 				EC35016D20D572A400A172B4 /* Resources */,
@@ -373,6 +381,42 @@
 			shellPath = /bin/sh;
 			shellScript = "SWIFTGEN_PATH=\"Sources/Main/SwiftGen\"\n\nmkdir -p \"$SWIFTGEN_PATH\"\ntouch \"$SWIFTGEN_PATH/Strings.swift\"\ntouch \"$SWIFTGEN_PATH/Assets.swift\"\n\nsummon/bin swiftgen strings -t \"structured-swift4\" -o \"$SWIFTGEN_PATH/Strings.swift\" \"Assets/en.lproj/Localizable.strings\"\nsummon/bin swiftgen xcassets -t \"swift4\" -o \"$SWIFTGEN_PATH/Assets.swift\" \"Assets/Assets.xcassets\"\n";
 		};
+		ECE93614216CA336006602B6 /* Generate code (Sourcery) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate code (Sourcery)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OUTPUT_PATH=\"Sources/Main/Sourcery.swift\"\ntouch \"$OUTPUT_PATH\"\n\nfor file in Stencils/Main/*.stencil\ndo\n    if [ -f \"$file\" ]\n    then\n        summon/bin sourcery --sources \"Sources/Main\" --templates \"Stencils/Main\" --output \"$OUTPUT_PATH\"\n        break\n    fi\ndone\n";
+		};
+		ECE93615216CA352006602B6 /* Generate code (Sourcery) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate code (Sourcery)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OUTPUT_PATH=\"Sources/MainTests/Sourcery.swift\"\ntouch \"$OUTPUT_PATH\"\n\nfor file in Stencils/MainTests/*.stencil\ndo\n    if [ -f \"$file\" ]\n    then\n        summon/bin sourcery --sources \"Sources\" --sources \"Pods\" --templates \"Stencils/MainTests\" --output \"$OUTPUT_PATH\"\n        break\n    fi\ndone\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -381,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE9360C216C71D4006602B6 /* Strings.swift in Sources */,
+				ECE93617216CBB94006602B6 /* Sourcery.swift in Sources */,
 				EC35016920D5704700A172B4 /* AppDelegate.swift in Sources */,
 				ECE9360D216C71D4006602B6 /* Assets.swift in Sources */,
 			);
@@ -390,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE93619216CBBA3006602B6 /* Sourcery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
