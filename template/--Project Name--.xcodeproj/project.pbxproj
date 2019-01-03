@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		EC18A2E3216C3FF000339F04 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		EC1C463421DE038D00D877BA /* Main-Info-AdHoc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Main-Info-AdHoc.plist"; sourceTree = "<group>"; };
 		EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "--Project Name-- Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35015420D5702800A172B4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC35015520D5702800A172B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,8 +123,9 @@
 		EC35015820D5703000A172B4 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				EC35015A20D5703000A172B4 /* Main-Info-Release.plist */,
 				EC35015B20D5703000A172B4 /* Main-Info-Debug.plist */,
+				EC1C463421DE038D00D877BA /* Main-Info-AdHoc.plist */,
+				EC35015A20D5703000A172B4 /* Main-Info-Release.plist */,
 				EC35015C20D5703000A172B4 /* Main-Test-Info.plist */,
 				EC35015920D5703000A172B4 /* Main-UITest-Info.plist */,
 			);
@@ -616,7 +618,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "Info/Main-Info-Release.plist";
+				INFOPLIST_FILE = "Info/Main-Info-AdHoc.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
