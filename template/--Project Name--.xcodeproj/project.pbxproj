@@ -271,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SWIFTGEN_PATH=\"Sources/Main/SwiftGen\"\n\nmkdir -p \"$SWIFTGEN_PATH\"\ntouch \"$SWIFTGEN_PATH/Strings.swift\"\ntouch \"$SWIFTGEN_PATH/Assets.swift\"\n\nsummon/bin swiftgen strings -t \"structured-swift4\" -o \"$SWIFTGEN_PATH/Strings.swift\" \"Assets/en.lproj/Localizable.strings\"\nsummon/bin swiftgen xcassets -t \"swift4\" -o \"$SWIFTGEN_PATH/Assets.swift\" \"Assets/Assets.xcassets\"\n";
+			shellScript = "summon/bin swiftgen\n";
 		};
 		ECE93614216CA336006602B6 /* Generate code (Sourcery) */ = {
 			isa = PBXShellScriptBuildPhase;

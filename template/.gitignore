@@ -18,7 +18,8 @@ Pods/
 carthage/
 
 # SwiftGen
-Sources/Main/SwiftGen/
+Sources/--Project Name--/L10n.swift
+Sources/--Project Name--/Asset.swift
 
 # Sourcery
 Sources/Main/Sourcery.swift
