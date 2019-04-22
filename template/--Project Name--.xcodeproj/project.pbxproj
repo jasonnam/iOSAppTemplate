@@ -253,7 +253,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin bartycrouch code -p \"Sources\" -l \"Assets\" -a\n";
+			shellScript = "summon/bin bartycrouch update -x\nsummon/bin bartycrouch lint -x\n";
 		};
 		ECE93604216C6B86006602B6 /* Generate code (SwiftGen) */ = {
 			isa = PBXShellScriptBuildPhase;
