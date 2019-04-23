@@ -6,6 +6,16 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EC3E652C226F606900CD8588 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6521226F606900CD8588 /* L10n.swift */; };
+		EC3E6530226F606900CD8588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6525226F606900CD8588 /* AppDelegate.swift */; };
+		EC3E6531226F606900CD8588 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6526226F606900CD8588 /* Asset.swift */; };
+		EC3E6532226F606900CD8588 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC3E6528226F606900CD8588 /* Localizable.strings */; };
+		EC3E6533226F606900CD8588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E652A226F606900CD8588 /* LaunchScreen.storyboard */; };
+		EC3E6534226F606900CD8588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E652B226F606900CD8588 /* Assets.xcassets */; };
+		EC3E6549226F644100CD8588 /* Sourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6537226F61B000CD8588 /* Sourcery.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EC35017420D572A500A172B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +37,17 @@
 		EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "--Project Name-- Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3E6521226F606900CD8588 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		EC3E6522226F606900CD8588 /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
+		EC3E6524226F606900CD8588 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
+		EC3E6525226F606900CD8588 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3E6526226F606900CD8588 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		EC3E6529226F606900CD8588 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC3E652A226F606900CD8588 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC3E652B226F606900CD8588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC3E6537226F61B000CD8588 /* Sourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
+		EC3E6538226F61B000CD8588 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3E653A226F61B000CD8588 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +78,8 @@
 		EC35011F20D56D6000A172B4 = {
 			isa = PBXGroup;
 			children = (
+				EC3E651F226F606900CD8588 /* Sources */,
+				EC3E6535226F61B000CD8588 /* Tests */,
 				EC35012920D56D6000A172B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +92,63 @@
 				EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EC3E651F226F606900CD8588 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E6520226F606900CD8588 /* --Project Name-- */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EC3E6520226F606900CD8588 /* --Project Name-- */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E6525226F606900CD8588 /* AppDelegate.swift */,
+				EC3E6527226F606900CD8588 /* Assets */,
+				EC3E6521226F606900CD8588 /* L10n.swift */,
+				EC3E6526226F606900CD8588 /* Asset.swift */,
+				EC3E6524226F606900CD8588 /* Info-Debug.plist */,
+				EC3E6522226F606900CD8588 /* Info-Release.plist */,
+			);
+			path = "--Project Name--";
+			sourceTree = "<group>";
+		};
+		EC3E6527226F606900CD8588 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E6528226F606900CD8588 /* Localizable.strings */,
+				EC3E652B226F606900CD8588 /* Assets.xcassets */,
+				EC3E652A226F606900CD8588 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EC3E6535226F61B000CD8588 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E6536226F61B000CD8588 /* --Project Name--Tests */,
+				EC3E6539226F61B000CD8588 /* --Project Name--UITests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		EC3E6536226F61B000CD8588 /* --Project Name--Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E6537226F61B000CD8588 /* Sourcery.swift */,
+				EC3E6538226F61B000CD8588 /* Info.plist */,
+			);
+			path = "--Project Name--Tests";
+			sourceTree = "<group>";
+		};
+		EC3E6539226F61B000CD8588 /* --Project Name--UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E653A226F61B000CD8588 /* Info.plist */,
+			);
+			path = "--Project Name--UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +261,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3E6533226F606900CD8588 /* LaunchScreen.storyboard in Resources */,
+				EC3E6532226F606900CD8588 /* Localizable.strings in Resources */,
+				EC3E6534226F606900CD8588 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +399,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3E6530226F606900CD8588 /* AppDelegate.swift in Sources */,
+				EC3E652C226F606900CD8588 /* L10n.swift in Sources */,
+				EC3E6531226F606900CD8588 /* Asset.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3E6549226F644100CD8588 /* Sourcery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +434,17 @@
 			targetProxy = EC35018220D5740700A172B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC3E6528226F606900CD8588 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3E6529226F606900CD8588 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EC35013820D56D6100A172B4 /* Debug */ = {
