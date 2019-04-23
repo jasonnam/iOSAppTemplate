@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-               BuildableName = "--Project Name-- AdHoc.app"
+               BuildableName = "--Project Name-- Debug.app"
                BlueprintName = "--Project Name--"
                ReferencedContainer = "container:--Project Name--.xcodeproj">
             </BuildableReference>
