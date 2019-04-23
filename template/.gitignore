@@ -22,5 +22,5 @@ Sources/--Project Name--/L10n.swift
 Sources/--Project Name--/Asset.swift
 
 # Sourcery
-Sources/Main/Sourcery.swift
-Sources/MainTests/Sourcery.swift
+Sources/--Project Name--/Sourcery.swift
+Tests/--Project Name--Tests/Sourcery.swift

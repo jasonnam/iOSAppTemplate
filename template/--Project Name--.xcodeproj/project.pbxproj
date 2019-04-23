@@ -289,7 +289,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OUTPUT_PATH=\"Sources/Main/Sourcery.swift\"\ntouch \"$OUTPUT_PATH\"\n\nfor file in Stencils/Main/*.stencil\ndo\n    if [ -f \"$file\" ]\n    then\n        summon/bin sourcery --sources \"Sources/Main\" --templates \"Stencils/Main\" --output \"$OUTPUT_PATH\"\n        break\n    fi\ndone\n";
+			shellScript = "summon/bin sourcery --config \"Sourcery/--Project Name--\"\n";
 		};
 		ECE93615216CA352006602B6 /* Generate code (Sourcery) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -307,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "OUTPUT_PATH=\"Sources/MainTests/Sourcery.swift\"\ntouch \"$OUTPUT_PATH\"\n\nfor file in Stencils/MainTests/*.stencil\ndo\n    if [ -f \"$file\" ]\n    then\n        summon/bin sourcery --sources \"Sources\" --sources \"Pods\" --templates \"Stencils/MainTests\" --output \"$OUTPUT_PATH\"\n        break\n    fi\ndone\n";
+			shellScript = "summon/bin sourcery --config \"Sourcery/--Project Name--Tests\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

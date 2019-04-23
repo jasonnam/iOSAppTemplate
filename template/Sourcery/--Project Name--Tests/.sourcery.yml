@@ -1,0 +1,6 @@
+sources:
+  - ../../Sources
+  - ../../Tests
+templates:
+  - .
+output: ../../Tests/--Project Name--Tests/Sourcery.swift
