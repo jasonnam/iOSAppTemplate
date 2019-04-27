@@ -1,4 +1,4 @@
-git_url("")
-git_branch("")
-readonly(true)
-username("")
+git_url ""
+git_branch ""
+readonly true
+username ""
