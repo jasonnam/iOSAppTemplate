@@ -1,5 +1,5 @@
 desc "Sync certificates and profiles"
-lane :sync_code_signing do
+lane :install_code_signing do
   match(
     app_identifier: ["--BundleID---Debug"],
     type: "development",

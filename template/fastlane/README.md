@@ -15,9 +15,9 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
-### sync_code_signing
+### install_code_signing
 ```
-fastlane sync_code_signing
+fastlane install_code_signing
 ```
 Sync certificates and profiles
 ### bootstrap
