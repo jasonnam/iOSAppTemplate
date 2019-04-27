@@ -300,7 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin carthage copy-frameworks\n";
+			shellScript = "summon/bin xcode carthage copy-frameworks\n";
 		};
 		EC9A01F0216BBA16002ABC45 /* Carthage Run Script (outdated) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -318,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin carthage outdated --xcode-warnings\n";
+			shellScript = "summon/bin xcode carthage outdated --xcode-warnings\n";
 		};
 		EC9A01F1216BBC82002ABC45 /* Generate Localizable.strings (BartyCrouch) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -336,7 +336,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin bartycrouch update -x\nsummon/bin bartycrouch lint -x\n";
+			shellScript = "summon/bin xcode bartycrouch update -x\nsummon/bin xcode bartycrouch lint -x\n";
 		};
 		ECE93604216C6B86006602B6 /* Generate code (SwiftGen) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -354,7 +354,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin swiftgen\n";
+			shellScript = "summon/bin xcode swiftgen\n";
 		};
 		ECE93614216CA336006602B6 /* Generate code (Sourcery) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -372,7 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin sourcery --config \"Sourcery/--Project Name--\"\n";
+			shellScript = "summon/bin xcode sourcery --config \"Sourcery/--Project Name--\"\n";
 		};
 		ECE93615216CA352006602B6 /* Generate code (Sourcery) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -390,7 +390,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin sourcery --config \"Sourcery/--Project Name--Tests\"\n";
+			shellScript = "summon/bin xcode sourcery --config \"Sourcery/--Project Name--Tests\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
