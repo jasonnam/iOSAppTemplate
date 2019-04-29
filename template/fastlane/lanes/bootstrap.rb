@@ -1,8 +1,8 @@
-import 'lanes/install_code_signing.rb'
+import "lanes/install_certificates.rb"
 
 desc "Install dependencies"
 lane :bootstrap do
-  # install_code_signing
+  # install_certificates
   summonbin(command: "\"pod\" \"install\"")
   summonbin(command: "carthage bootstrap --platform ios --cache-builds")
 end
