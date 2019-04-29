@@ -1,4 +1,4 @@
 git_url ""
-git_branch ""
 readonly true
-username ""
+keychain_name "--Project Name--.keychain-db"
+keychain_password ENV["KEYCHAIN_PASSWORD"]
