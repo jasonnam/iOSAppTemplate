@@ -7,7 +7,7 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "YES"
@@ -28,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC35016E20D572A400A172B4"
+               BuildableName = "--Project Name--Tests.xctest"
+               BlueprintName = "--Project Name--Tests"
+               ReferencedContainer = "container:--Project Name--.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC35017C20D5740600A172B4"
+               BuildableName = "--Project Name--UITests.xctest"
+               BlueprintName = "--Project Name--UITests"
+               ReferencedContainer = "container:--Project Name--.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EC35014020D56F5C00A172B4"
+            BuildableName = "--Project Name--.app"
+            BlueprintName = "--Project Name--"
+            ReferencedContainer = "container:--Project Name--.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
