@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "--Project Name-- Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC35014120D56F5C00A172B4 /* --Project Name--.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "--Project Name--.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E6521226F606900CD8588 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		EC35012920D56D6000A172B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */,
+				EC35014120D56F5C00A172B4 /* --Project Name--.app */,
 				EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */,
 				EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */,
 			);
@@ -173,7 +173,7 @@
 			);
 			name = "--Project Name--";
 			productName = "--Project Name--";
-			productReference = EC35014120D56F5C00A172B4 /* --Project Name-- Debug.app */;
+			productReference = EC35014120D56F5C00A172B4 /* --Project Name--.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EC35016E20D572A400A172B4 /* --Project Name--Tests */ = {
@@ -519,7 +519,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID---Debug";
-				PRODUCT_NAME = "$(TARGET_NAME) Debug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -623,7 +623,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID---AdHoc";
-				PRODUCT_NAME = "$(TARGET_NAME) AdHoc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = AdHoc;
