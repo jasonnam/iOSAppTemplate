@@ -8,7 +8,7 @@ import UIKit
 import AppKit
 #endif
 
-@testable import --Project Name--_Debug
+@testable import --Project Name--
 
 {% macro swiftifyMethodName name %}{{ name | replace:"(","_" | replace:")","" | replace:":","_" | replace:"`","" | snakeToCamelCase | lowerFirstWord }}{% endmacro %}
 
