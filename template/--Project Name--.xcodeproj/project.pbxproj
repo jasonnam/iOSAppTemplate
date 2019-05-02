@@ -156,9 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC35015220D56F5D00A172B4 /* Build configuration list for PBXNativeTarget "--Project Name--" */;
 			buildPhases = (
-				EC9A01F1216BBC82002ABC45 /* Generate Localizable.strings (BartyCrouch) */,
-				ECE93604216C6B86006602B6 /* Generate code (SwiftGen) */,
-				ECE93614216CA336006602B6 /* Generate code (Sourcery) */,
+				EC9A01F1216BBC82002ABC45 /* Lint Localizable.strings (BartyCrouch) */,
 				EC35013D20D56F5C00A172B4 /* Sources */,
 				EC35013E20D56F5C00A172B4 /* Frameworks */,
 				EC35013F20D56F5C00A172B4 /* Resources */,
@@ -178,7 +176,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC35017620D572A500A172B4 /* Build configuration list for PBXNativeTarget "--Project Name--Tests" */;
 			buildPhases = (
-				ECE93615216CA352006602B6 /* Generate code (Sourcery) */,
 				EC35016B20D572A400A172B4 /* Sources */,
 				EC35016C20D572A400A172B4 /* Frameworks */,
 				EC35016D20D572A400A172B4 /* Resources */,
@@ -318,7 +315,7 @@
 			shellPath = /bin/sh;
 			shellScript = "summon/bin xcode carthage outdated --xcode-warnings\n";
 		};
-		EC9A01F1216BBC82002ABC45 /* Generate Localizable.strings (BartyCrouch) */ = {
+		EC9A01F1216BBC82002ABC45 /* Lint Localizable.strings (BartyCrouch) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,7 +324,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Generate Localizable.strings (BartyCrouch)";
+			name = "Lint Localizable.strings (BartyCrouch)";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -335,60 +332,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "summon/bin xcode bartycrouch update -x\nsummon/bin xcode bartycrouch lint -x\n";
-		};
-		ECE93604216C6B86006602B6 /* Generate code (SwiftGen) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Generate code (SwiftGen)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "summon/bin xcode swiftgen\n";
-		};
-		ECE93614216CA336006602B6 /* Generate code (Sourcery) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Generate code (Sourcery)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "summon/bin xcode sourcery --config \"Sourcery/--Project Name--\"\n";
-		};
-		ECE93615216CA352006602B6 /* Generate code (Sourcery) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Generate code (Sourcery)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "summon/bin xcode sourcery --config \"Sourcery/--Project Name--Tests\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
