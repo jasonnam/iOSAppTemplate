@@ -26,3 +26,7 @@ Sources/--Project Name--/Asset.swift
 # Sourcery
 Sources/--Project Name--/Sourcery.swift
 Tests/--Project Name--Tests/Sourcery.swift
+
+# Info.plist
+Sources/--Project Name--/Info-AdHoc.plist
+Sources/--Project Name--/Info-Release.plist
