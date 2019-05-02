@@ -25,6 +25,11 @@ Install certificates and provisioning profiles
 fastlane bootstrap
 ```
 Install dependencies
+### test
+```
+fastlane test
+```
+Run unit tests and UI tests
 
 ----
 
