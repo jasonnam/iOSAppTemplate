@@ -8,4 +8,12 @@ lane :bootstrap do
   summonbin(command: "swiftgen")
   summonbin(command: "sourcery --config \"Sourcery/--Project Name--\"")
   summonbin(command: "sourcery --config \"Sourcery/--Project Name--Tests\"")
+  copy(
+    source: "Sources/--Project Name--/Info.plist",
+    destination: "Sources/--Project Name--/Info-AdHoc.plist"
+  )
+  copy(
+    source: "Sources/--Project Name--/Info.plist",
+    destination: "Sources/--Project Name--/Info-Release.plist"
+  )
 end
