@@ -38,8 +38,6 @@
 		EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3E6521226F606900CD8588 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
-		EC3E6522226F606900CD8588 /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
-		EC3E6524226F606900CD8588 /* Info-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 		EC3E6525226F606900CD8588 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC3E6526226F606900CD8588 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		EC3E6529226F606900CD8588 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -48,6 +46,7 @@
 		EC3E6537226F61B000CD8588 /* Sourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
 		EC3E6538226F61B000CD8588 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC3E653A226F61B000CD8588 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6488AD227B24930056BAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +108,7 @@
 				EC3E6527226F606900CD8588 /* Assets */,
 				EC3E6521226F606900CD8588 /* L10n.swift */,
 				EC3E6526226F606900CD8588 /* Asset.swift */,
-				EC3E6524226F606900CD8588 /* Info-Debug.plist */,
-				EC3E6522226F606900CD8588 /* Info-Release.plist */,
+				EC6488AD227B24930056BAD9 /* Info.plist */,
 			);
 			path = "--Project Name--";
 			sourceTree = "<group>";
