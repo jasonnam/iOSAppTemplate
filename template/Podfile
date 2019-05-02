@@ -1,12 +1,12 @@
-platform :ios, '12.0'
+platform :ios, "12.0"
 use_frameworks!
 inhibit_all_warnings!
 
-target '--Project Name--' do
-  target '--Project Name--Tests' do
+target "--Project Name--" do
+  target "--Project Name--Tests" do
     inherit! :search_paths
   end
-  target '--Project Name--UITests' do
+  target "--Project Name--UITests" do
     inherit! :search_paths
   end
 end
