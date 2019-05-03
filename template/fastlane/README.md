@@ -30,6 +30,11 @@ Install dependencies
 fastlane test
 ```
 Run unit tests and UI tests
+### release
+```
+fastlane release
+```
+Release app on develop or release branches
 
 ----
 

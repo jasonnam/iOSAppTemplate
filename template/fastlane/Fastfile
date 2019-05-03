@@ -1,2 +1,3 @@
 import "lanes/bootstrap.rb"
 import "lanes/test.rb"
+import "lanes/release.rb"

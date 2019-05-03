@@ -4,3 +4,4 @@
 
 gem "fastlane-plugin-summonbin"
 gem "fastlane-plugin-copy"
+gem "fastlane-plugin-version"
