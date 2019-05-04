@@ -160,8 +160,6 @@
 				EC35013D20D56F5C00A172B4 /* Sources */,
 				EC35013E20D56F5C00A172B4 /* Frameworks */,
 				EC35013F20D56F5C00A172B4 /* Resources */,
-				EC9A01EF216BB93E002ABC45 /* Carthage Run Script (copy-frameworks) */,
-				EC9A01F0216BBA16002ABC45 /* Carthage Run Script (outdated) */,
 			);
 			buildRules = (
 			);
@@ -279,42 +277,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EC9A01EF216BB93E002ABC45 /* Carthage Run Script (copy-frameworks) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Carthage Run Script (copy-frameworks)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "summon/bin xcode carthage copy-frameworks\n";
-		};
-		EC9A01F0216BBA16002ABC45 /* Carthage Run Script (outdated) */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Carthage Run Script (outdated)";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "summon/bin xcode carthage outdated --xcode-warnings\n";
-		};
 		EC9A01F1216BBC82002ABC45 /* Lint Localizable.strings (BartyCrouch) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
