@@ -1,2 +1,2 @@
 #!/bin/sh
-curl -L https://raw.githubusercontent.com/summonbin/core/0.1.5/scripts/init.sh | sh
+curl -L https://raw.githubusercontent.com/summonbin/core/0.1.6/scripts/init.sh | sh
