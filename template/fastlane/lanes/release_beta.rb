@@ -1,5 +1,6 @@
 desc "Release beta"
 lane :release_beta do
+  sh "rm -rf ../build/beta"
   gym(
     scheme: "--Project Name-- AdHoc",
     export_method: "ad-hoc",
