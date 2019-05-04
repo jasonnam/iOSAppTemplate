@@ -45,6 +45,21 @@ Install dependencies and prepare files
 fastlane test
 ```
 Run unit tests and UI tests
+### set_version_and_build_version
+```
+fastlane set_version_and_build_version
+```
+Set version and build version
+### release_beta
+```
+fastlane release_beta
+```
+Release beta
+### release_app_store
+```
+fastlane release_app_store
+```
+Release to App Store
 ### release
 ```
 fastlane release
