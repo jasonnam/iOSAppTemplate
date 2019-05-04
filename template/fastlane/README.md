@@ -20,11 +20,26 @@ or alternatively using `brew cask install fastlane`
 fastlane install_certificates
 ```
 Install certificates and provisioning profiles
+### install_dependencies
+```
+fastlane install_dependencies
+```
+Install dependencies
+### generate_code
+```
+fastlane generate_code
+```
+Generate code with SwiftGen and Sourcery
+### copy_info_plists
+```
+fastlane copy_info_plists
+```
+Copy ad hoc and release info plists
 ### bootstrap
 ```
 fastlane bootstrap
 ```
-Install dependencies
+Install dependencies and prepare files
 ### test
 ```
 fastlane test

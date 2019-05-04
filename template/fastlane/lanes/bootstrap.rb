@@ -1,19 +1,12 @@
 import "lanes/install_certificates.rb"
+import "lanes/install_dependencies.rb"
+import "lanes/generate_code.rb"
+import "lanes/copy_info_plists.rb"
 
-desc "Install dependencies"
+desc "Install dependencies and prepare files"
 lane :bootstrap do
   # install_certificates
-  summonbin(command: "\"pod\" \"install\"")
-  summonbin(command: "carthage bootstrap --platform ios --cache-builds")
-  summonbin(command: "swiftgen")
-  summonbin(command: "sourcery --config \"Sourcery/--Project Name--\"")
-  summonbin(command: "sourcery --config \"Sourcery/--Project Name--Tests\"")
-  copy(
-    source: "Sources/--Project Name--/Info.plist",
-    destination: "Sources/--Project Name--/Info-AdHoc.plist"
-  )
-  copy(
-    source: "Sources/--Project Name--/Info.plist",
-    destination: "Sources/--Project Name--/Info-Release.plist"
-  )
+  install_dependencies
+  generate_code
+  copy_info_plists
 end
