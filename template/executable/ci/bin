@@ -1,4 +1,0 @@
-fastlane ruby system
-pod ruby system
-swiftgen binary download https://github.com/SwiftGen/SwiftGen/releases/download/6.1.0/swiftgen-6.1.0.zip bin
-sourcery binary download https://github.com/krzysztofzablocki/Sourcery/releases/download/0.16.0/Sourcery-0.16.0.zip bin
