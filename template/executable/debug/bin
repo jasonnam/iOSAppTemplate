@@ -1,5 +1,5 @@
 fastlane ruby 2.6.3
 pod ruby 2.6.3
-bartycrouch swift system https://github.com/Flinesoft/BartyCrouch 4.0.1
+bartycrouch binary download https://github.com/Flinesoft/BartyCrouch/releases/download/4.0.1/portable_bartycrouch.zip /
 swiftgen binary download https://github.com/SwiftGen/SwiftGen/releases/download/6.1.0/swiftgen-6.1.0.zip bin
 sourcery binary download https://github.com/krzysztofzablocki/Sourcery/releases/download/0.16.0/Sourcery-0.16.0.zip bin
