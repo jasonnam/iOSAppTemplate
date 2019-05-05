@@ -1,6 +1,6 @@
 desc "Release beta"
 lane :release_beta do
-  remove_files("build/beta")
+  remove_files(path: "build/beta")
 
   gym(
     scheme: "--Project Name-- AdHoc",
