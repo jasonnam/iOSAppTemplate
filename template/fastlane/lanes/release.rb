@@ -4,7 +4,7 @@ import "lanes/release_app_store.rb"
 
 desc "Release app on develop or release branches"
 lane :release do
-  build_version = Time.now.to_i
+  build_version = "#{Time.now.to_i}"
   if git_branch == "develop"
     version = "[develop] #{last_git_commit[:abbreviated_commit_hash]}"
     set_version_and_build_version(version: version, build_version: build_version)
