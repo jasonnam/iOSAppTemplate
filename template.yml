@@ -5,7 +5,8 @@ variables:
     displayName: Organization Name
   - name: BUNDLE_ID
     displayName: Bundle ID
-  - name: Creator Name
+  - name: CREATOR_NAME
+    displayName: Creator Name
 posthooks:
   - bootstrap.sh
   - git_init.sh

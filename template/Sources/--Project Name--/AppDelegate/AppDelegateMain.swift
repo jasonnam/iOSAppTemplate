@@ -2,7 +2,7 @@
 //  --FILE:NAME--
 //  --Project Name--
 //
-//  Created by --Creator Name-- on --DATE:SHORT--.
+//  Created by --CREATOR_NAME-- on --DATE:SHORT--.
 //  Copyright © --DATE:YEAR-- --ORGANIZATION_NAME--. All rights reserved.
 //
 
