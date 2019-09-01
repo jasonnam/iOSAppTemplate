@@ -6,14 +6,8 @@
 //  Copyright © --DATE:YEAR-- --Organization Name--. All rights reserved.
 //
 
-import UIKit
+import AppDelegate
 
 @UIApplicationMain
-final class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        return true
-    }
+final class AppDelegateMain: AppDelegate {
 }
