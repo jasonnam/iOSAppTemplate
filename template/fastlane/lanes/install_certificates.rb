@@ -14,19 +14,19 @@ lane :install_certificates do
   end
 
   match(
-    app_identifier: ["--BundleID---Debug"],
+    app_identifier: ["--BUNDLE_ID---Debug"],
     type: "development",
     keychain_name: keychain_name,
     keychain_password: keychain_password
   )
   match(
-    app_identifier: ["--BundleID---AdHoc"],
+    app_identifier: ["--BUNDLE_ID---AdHoc"],
     type: "adhoc",
     keychain_name: keychain_name,
     keychain_password: keychain_password
   )
   match(
-    app_identifier: ["--BundleID--"],
+    app_identifier: ["--BUNDLE_ID--"],
     type: "appstore",
     keychain_name: keychain_name,
     keychain_password: keychain_password

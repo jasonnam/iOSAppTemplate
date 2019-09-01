@@ -421,7 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID---Debug";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID---Debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -437,7 +437,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/--Project Name--.app/--Project Name--";
@@ -453,7 +453,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID--UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "--Project Name--";
@@ -526,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID---AdHoc";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID---AdHoc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -542,7 +542,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/--Project Name--.app/--Project Name--";
@@ -558,7 +558,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID--UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "--Project Name--";
@@ -630,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -646,7 +646,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID--Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/--Project Name--.app/--Project Name--";
@@ -662,7 +662,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "--BundleID--UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "--BUNDLE_ID--UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "--Project Name--";

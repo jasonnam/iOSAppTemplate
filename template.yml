@@ -2,7 +2,8 @@ description: iOS App Template
 variables:
   - name: Project Name
   - name: Organization Name
-  - name: BundleID
+  - name: BUNDLE_ID
+    displayName: Bundle ID
   - name: Creator Name
 posthooks:
   - bootstrap.sh
