@@ -11,12 +11,12 @@ lane :set_version_and_build_version do |options|
   UI.message "Build Version: #{build_version}"
 
   set_version(
-    plist: "Sources/--Project Name--/Info-AdHoc.plist",
+    plist: "Sources/--PROJECT_NAME--/Info-AdHoc.plist",
     version: version,
     build_version: build_version
   )
   set_version(
-    plist: "Sources/--Project Name--/Info-Release.plist",
+    plist: "Sources/--PROJECT_NAME--/Info-Release.plist",
     version: version,
     build_version: build_version
   )

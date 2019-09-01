@@ -7,7 +7,7 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "YES"
@@ -15,25 +15,54 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-               BuildableName = "--Project Name--.app"
-               BlueprintName = "--Project Name--"
-               ReferencedContainer = "container:--Project Name--.xcodeproj">
+               BuildableName = "--PROJECT_NAME--.app"
+               BlueprintName = "--PROJECT_NAME--"
+               ReferencedContainer = "container:--PROJECT_NAME--.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Release"
+      buildConfiguration = "AdHoc"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC35016E20D572A400A172B4"
+               BuildableName = "--PROJECT_NAME--Tests.xctest"
+               BlueprintName = "--PROJECT_NAME--Tests"
+               ReferencedContainer = "container:--PROJECT_NAME--.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC35017C20D5740600A172B4"
+               BuildableName = "--PROJECT_NAME--UITests.xctest"
+               BlueprintName = "--PROJECT_NAME--UITests"
+               ReferencedContainer = "container:--PROJECT_NAME--.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EC35014020D56F5C00A172B4"
+            BuildableName = "--PROJECT_NAME--.app"
+            BlueprintName = "--PROJECT_NAME--"
+            ReferencedContainer = "container:--PROJECT_NAME--.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "AdHoc"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -46,16 +75,16 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-            BuildableName = "--Project Name--.app"
-            BlueprintName = "--Project Name--"
-            ReferencedContainer = "container:--Project Name--.xcodeproj">
+            BuildableName = "--PROJECT_NAME--.app"
+            BlueprintName = "--PROJECT_NAME--"
+            ReferencedContainer = "container:--PROJECT_NAME--.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "AdHoc"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -64,17 +93,17 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC35014020D56F5C00A172B4"
-            BuildableName = "--Project Name--.app"
-            BlueprintName = "--Project Name--"
-            ReferencedContainer = "container:--Project Name--.xcodeproj">
+            BuildableName = "--PROJECT_NAME--.app"
+            BlueprintName = "--PROJECT_NAME--"
+            ReferencedContainer = "container:--PROJECT_NAME--.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Release">
+      buildConfiguration = "AdHoc">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "AdHoc"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

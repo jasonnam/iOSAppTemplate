@@ -1,6 +1,7 @@
 description: iOS App Template
 variables:
-  - name: Project Name
+  - name: PROJECT_NAME
+    displayName: Project Name
   - name: ORGANIZATION_NAME
     displayName: Organization Name
   - name: BUNDLE_ID

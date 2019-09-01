@@ -3,7 +3,7 @@ lane :release_beta do
   remove_files(path: "build/beta")
 
   gym(
-    scheme: "--Project Name-- AdHoc",
+    scheme: "--PROJECT_NAME-- AdHoc",
     export_method: "ad-hoc",
     export_options: {
       compileBitcode: false

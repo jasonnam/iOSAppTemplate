@@ -18,9 +18,9 @@ build/
 Pods/
 
 # Sourcery
-Sources/--Project Name--/Sourcery.swift
-Tests/--Project Name--Tests/Sourcery.swift
+Sources/--PROJECT_NAME--/Sourcery.swift
+Tests/--PROJECT_NAME--Tests/Sourcery.swift
 
 # Info.plist
-Sources/--Project Name--/Info-AdHoc.plist
-Sources/--Project Name--/Info-Release.plist
+Sources/--PROJECT_NAME--/Info-AdHoc.plist
+Sources/--PROJECT_NAME--/Info-Release.plist

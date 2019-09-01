@@ -1,6 +1,6 @@
 desc "Install certificates and provisioning profiles"
 lane :install_certificates do
-  keychain_name = "--Project Name--.keychain-db"
+  keychain_name = "--PROJECT_NAME--.keychain-db"
   keychain_password = ENV["MATCH_KEYCHAIN_PASSWORD"]
   keychain_file_path = File.expand_path("~/Library/Keychains/#{keychain_name}")
 

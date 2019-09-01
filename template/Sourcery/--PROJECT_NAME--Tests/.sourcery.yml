@@ -3,4 +3,4 @@ sources:
   - ../../Tests
 templates:
   - .
-output: ../../Tests/--Project Name--Tests/Sourcery.swift
+output: ../../Tests/--PROJECT_NAME--Tests/Sourcery.swift

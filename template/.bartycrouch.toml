@@ -2,7 +2,7 @@
 tasks = ["normalize"]
 
 [update.normalize]
-path = "Sources/--Project Name--/Assets"
+path = "Sources/--PROJECT_NAME--/Assets"
 
 [lint]
-path = "Sources/--Project Name--/Assets"
+path = "Sources/--PROJECT_NAME--/Assets"
