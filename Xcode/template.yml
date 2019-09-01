@@ -1,4 +1,4 @@
-description: iOS App Template
+description: iOS App Xcode Template
 variables:
   - name: PROJECT_NAME
     displayName: Project Name
