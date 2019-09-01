@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC3E6530226F606900CD8588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6525226F606900CD8588 /* AppDelegate.swift */; };
+		EC3E6530226F606900CD8588 /* AppDelegateMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E6525226F606900CD8588 /* AppDelegateMain.swift */; };
 		EC3E6532226F606900CD8588 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC3E6528226F606900CD8588 /* Localizable.strings */; };
 		EC3E6533226F606900CD8588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3E652A226F606900CD8588 /* LaunchScreen.storyboard */; };
 		EC3E6534226F606900CD8588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3E652B226F606900CD8588 /* Assets.xcassets */; };
@@ -35,7 +35,7 @@
 		EC35014120D56F5C00A172B4 /* --Project Name--.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "--Project Name--.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35016F20D572A400A172B4 /* --Project Name--Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC35017D20D5740600A172B4 /* --Project Name--UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "--Project Name--UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC3E6525226F606900CD8588 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC3E6525226F606900CD8588 /* AppDelegateMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateMain.swift; sourceTree = "<group>"; };
 		EC3E6529226F606900CD8588 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC3E652A226F606900CD8588 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3E652B226F606900CD8588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		EC3E6520226F606900CD8588 /* --Project Name-- */ = {
 			isa = PBXGroup;
 			children = (
-				EC3E6525226F606900CD8588 /* AppDelegate.swift */,
+				ECFC4FFB231BBB94003F513C /* AppDelegate */,
 				EC3E6527226F606900CD8588 /* Assets */,
 				EC6488AD227B24930056BAD9 /* Info.plist */,
 			);
@@ -141,6 +141,14 @@
 				EC3E653A226F61B000CD8588 /* Info.plist */,
 			);
 			path = "--Project Name--UITests";
+			sourceTree = "<group>";
+		};
+		ECFC4FFB231BBB94003F513C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC3E6525226F606900CD8588 /* AppDelegateMain.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3E6530226F606900CD8588 /* AppDelegate.swift in Sources */,
+				EC3E6530226F606900CD8588 /* AppDelegateMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
