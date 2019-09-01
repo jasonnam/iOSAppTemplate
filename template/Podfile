@@ -1,6 +1,10 @@
 platform :ios, "13.0"
 
 target "--Project Name--" do
+  pod "Steroid"
+  pod "Steroid/UIKit13"
+  pod "AppDelegate"
+
   target "--Project Name--Tests" do
     inherit! :search_paths
   end
