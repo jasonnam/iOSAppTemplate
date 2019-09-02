@@ -1,0 +1,53 @@
+load(
+    "@bazel_tools//tools/build_defs/repo:git.bzl",
+    "git_repository",
+)
+
+git_repository(
+    name = "build_bazel_rules_apple",
+    commit = "61f844f7d7fd6b3f56428c0b1b115ae35d443573",
+    remote = "https://github.com/bazelbuild/rules_apple.git",
+)
+
+load(
+    "@build_bazel_rules_apple//apple:repositories.bzl",
+    "apple_rules_dependencies",
+)
+
+apple_rules_dependencies()
+
+load(
+    "@build_bazel_apple_support//lib:repositories.bzl",
+    "apple_support_dependencies",
+)
+
+apple_support_dependencies()
+
+load(
+    "@build_bazel_rules_swift//swift:repositories.bzl",
+    "swift_rules_dependencies",
+)
+
+swift_rules_dependencies()
+
+load(
+    "@com_google_protobuf//:protobuf_deps.bzl",
+    "protobuf_deps",
+)
+
+protobuf_deps()
+
+load(
+    "@bazel_tools//tools/build_defs/repo:http.bzl",
+    "http_archive",
+)
+
+http_archive(
+    name = "AppDelegate",
+    build_file = "//Sources:BUILD.AppDelegate",
+    sha256 = "04caf8a9272f26d2ccb32351ea3f6c9df1ab73ca0b488d59ccd21c24b6422373",
+    strip_prefix = "AppDelegate-0.1.1",
+    urls = [
+        "https://github.com/jasonnam/AppDelegate/archive/0.1.1.zip",
+    ],
+)

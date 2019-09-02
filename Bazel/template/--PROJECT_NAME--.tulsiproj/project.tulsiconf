@@ -1,0 +1,14 @@
+{
+  "configDefaults" : {
+    "optionSet" : {
+
+    }
+  },
+  "packages" : [
+    "Sources",
+    "Tests",
+    "UITests"
+  ],
+  "projectName" : "--PROJECT_NAME--",
+  "workspaceRoot" : ".."
+}
