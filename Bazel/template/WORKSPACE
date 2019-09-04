@@ -44,10 +44,9 @@ load(
 
 http_archive(
     name = "AppDelegate",
-    build_file = "//Sources:BUILD.AppDelegate",
-    sha256 = "04caf8a9272f26d2ccb32351ea3f6c9df1ab73ca0b488d59ccd21c24b6422373",
-    strip_prefix = "AppDelegate-0.1.1",
+    sha256 = "166d67a0d6d8c0a7c6d8ea0822cfec20809cfc191405027e0933a364f8b0f70a",
+    strip_prefix = "AppDelegate-0.2.0",
     urls = [
-        "https://github.com/jasonnam/AppDelegate/archive/0.1.1.zip",
+        "https://github.com/jasonnam/AppDelegate/archive/0.2.0.zip",
     ],
 )
