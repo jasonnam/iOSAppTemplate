@@ -1,5 +1,9 @@
 [update]
-tasks = ["normalize"]
+tasks = ["code", "normalize"]
+
+[update.code]
+codePath = "Sources/--PROJECT_NAME--"
+localizablePath = "Sources/--PROJECT_NAME--/Assets"
 
 [update.normalize]
 path = "Sources/--PROJECT_NAME--/Assets"
