@@ -295,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "summon/bin bartycrouch update -x\nsummon/bin bartycrouch lint -x\n";
+			shellScript = "cp BartyCrouch/.--PROJECT_NAME--.bartycrouch.toml .bartycrouch.toml\nsummon/bin bartycrouch update -x\nsummon/bin bartycrouch lint -x\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
