@@ -21,6 +21,9 @@ Pods/
 Sources/--PROJECT_NAME--/Sourcery.swift
 Tests/--PROJECT_NAME--Tests/Sourcery.swift
 
+# BartyCrouch
+.bartycrouch.toml
+
 # Info.plist
 Sources/--PROJECT_NAME--/Info-AdHoc.plist
 Sources/--PROJECT_NAME--/Info-Release.plist
