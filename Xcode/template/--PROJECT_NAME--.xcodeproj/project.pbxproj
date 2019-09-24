@@ -158,7 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC35015220D56F5D00A172B4 /* Build configuration list for PBXNativeTarget "--PROJECT_NAME--" */;
 			buildPhases = (
-				EC9A01F1216BBC82002ABC45 /* Lint Localizable.strings (BartyCrouch) */,
+				EC9A01F1216BBC82002ABC45 /* Update Localizable.strings (BartyCrouch) */,
 				EC35013D20D56F5C00A172B4 /* Sources */,
 				EC35013E20D56F5C00A172B4 /* Frameworks */,
 				EC35013F20D56F5C00A172B4 /* Resources */,
@@ -279,7 +279,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EC9A01F1216BBC82002ABC45 /* Lint Localizable.strings (BartyCrouch) */ = {
+		EC9A01F1216BBC82002ABC45 /* Update Localizable.strings (BartyCrouch) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,7 +288,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Lint Localizable.strings (BartyCrouch)";
+			name = "Update Localizable.strings (BartyCrouch)";
 			outputFileListPaths = (
 			);
 			outputPaths = (
