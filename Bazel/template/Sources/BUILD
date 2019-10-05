@@ -5,7 +5,11 @@ load(
 
 ios_application(
     name = "--PROJECT_NAME--",
-    bundle_id = "--BUNDLE_ID--",
+    bundle_id = select({
+        ":release": "--BUNDLE_ID--",
+        ":adhoc": "--BUNDLE_ID---AdHoc",
+        ":debug": "--BUNDLE_ID---Debug",
+    }),
     families = [
         "iphone",
         "ipad",
@@ -14,6 +18,11 @@ ios_application(
         "Info.plist",
     ],
     minimum_os_version = "12.0",
+    provisioning_profile = select({
+        ":release": "--PROJECT_NAME--.mobileprovision",
+        ":adhoc": "--PROJECT_NAME---AdHoc.mobileprovision",
+        ":debug": "--PROJECT_NAME---Debug.mobileprovision",
+    }),
     version = ":bundle_version",
     visibility = [
         "//visibility:public",
@@ -37,6 +46,36 @@ apple_bundle_version(
         "build_version": "\\d+",
     },
     short_version_string = "{version}",
+    visibility = [
+        "//visibility:private",
+    ],
+)
+
+config_setting(
+    name = "release",
+    define_values = {
+        "configuration": "release",
+    },
+    visibility = [
+        "//visibility:private",
+    ],
+)
+
+config_setting(
+    name = "adhoc",
+    define_values = {
+        "configuration": "adhoc",
+    },
+    visibility = [
+        "//visibility:private",
+    ],
+)
+
+config_setting(
+    name = "debug",
+    define_values = {
+        "configuration": "debug",
+    },
     visibility = [
         "//visibility:private",
     ],

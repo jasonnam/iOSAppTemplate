@@ -1,3 +1,4 @@
 /bazel-*
 /*.tulsiproj/*.tulsiconf-user
 /*.xcodeproj
+*.mobileprovision

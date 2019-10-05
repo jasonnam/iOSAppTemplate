@@ -1,7 +1,12 @@
 {
   "configDefaults" : {
     "optionSet" : {
-
+      "BazelBuildOptionsDebug" : {
+        "p" : "--define configuration=debug"
+      },
+      "BazelBuildOptionsRelease" : {
+        "p" : "--define configuration=release"
+      }
     }
   },
   "packages" : [
