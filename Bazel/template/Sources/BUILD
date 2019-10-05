@@ -33,8 +33,8 @@ apple_bundle_version(
     build_label_pattern = "version_{version}_build_version_{build_version}",
     build_version = "{build_version}",
     capture_groups = {
-        "version": "\d+\.\d+\.\d+",
-        "build_version": "\d+",
+        "version": "\\d+.\\d+.\\d+",
+        "build_version": "\\d+",
     },
     short_version_string = "{version}",
     visibility = [
