@@ -2,6 +2,10 @@ load(
     "@build_bazel_rules_apple//apple:ios.bzl",
     "ios_application",
 )
+load(
+    "@build_bazel_rules_apple//apple:versioning.bzl",
+    "apple_bundle_version",
+)
 
 ios_application(
     name = "--PROJECT_NAME--",
@@ -30,11 +34,6 @@ ios_application(
     deps = [
         "//Sources/Main",
     ],
-)
-
-load(
-    "@build_bazel_rules_apple//apple:versioning.bzl",
-    "apple_bundle_version",
 )
 
 apple_bundle_version(

@@ -2,6 +2,10 @@ load(
     "@build_bazel_rules_apple//apple:ios.bzl",
     "ios_ui_test",
 )
+load(
+    "@build_bazel_rules_swift//swift:swift.bzl",
+    "swift_library",
+)
 
 ios_ui_test(
     name = "--PROJECT_NAME--UITests",
@@ -13,11 +17,6 @@ ios_ui_test(
     deps = [
         "UITests",
     ],
-)
-
-load(
-    "@build_bazel_rules_swift//swift:swift.bzl",
-    "swift_library",
 )
 
 swift_library(
