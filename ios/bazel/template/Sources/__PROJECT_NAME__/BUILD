@@ -4,15 +4,12 @@ load(
 )
 
 swift_library(
-    name = "Main",
-    srcs = glob([
-        "**/*.swift",
-    ]),
+    name = "__PROJECT_NAME__",
     visibility = [
-        "//Sources:__pkg__",
-        "//Tests/MainTests:__pkg__",
+        "//:__pkg__",
+        "//Tests/__PROJECT_NAME__Tests:__pkg__",
     ],
     deps = [
-        "@AppDelegate",
+        "//Sources/__PROJECT_NAME__/AppDelegate",
     ],
 )
