@@ -3,9 +3,9 @@
     "Sources/BUILD"
   ],
   "buildTargets" : [
-    "//Sources:--PROJECT_NAME--",
-    "//Tests:--PROJECT_NAME--Tests",
-    "//UITests:--PROJECT_NAME--UITests"
+    "//:__PROJECT_NAME__",
+    "//Tests:__PROJECT_NAME__Tests",
+    "//Tests:__PROJECT_NAME__UITests"
   ],
   "optionSet" : {
     "BazelBuildOptionsDebug" : {
@@ -52,6 +52,5 @@
   "sourceFilters" : [
     "Sources/...",
     "Tests/...",
-    "UITests/..."
   ]
 }

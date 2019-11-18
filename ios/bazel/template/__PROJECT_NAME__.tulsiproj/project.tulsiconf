@@ -10,10 +10,9 @@
     }
   },
   "packages" : [
-    "Sources",
+    "",
     "Tests",
-    "UITests"
   ],
-  "projectName" : "--PROJECT_NAME--",
+  "projectName" : "__PROJECT_NAME__",
   "workspaceRoot" : ".."
 }
