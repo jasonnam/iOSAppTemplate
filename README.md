@@ -1,1 +1,1 @@
-# iOS App Template
+# Flint Templates for Swift Project
