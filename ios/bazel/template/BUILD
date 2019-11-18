@@ -21,7 +21,7 @@ ios_application(
     infoplists = [
         "InfoPlists/__PROJECT_NAME__-Info.plist",
     ],
-    minimum_os_version = "12.0",
+    minimum_os_version = "13.0",
     provisioning_profile = select({
         ":release": "CodeSigning/__PROJECT_NAME__.mobileprovision",
         ":adhoc": "CodeSigning/__PROJECT_NAME__-AdHoc.mobileprovision",

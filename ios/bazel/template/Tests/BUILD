@@ -6,7 +6,7 @@ load(
 
 ios_unit_test(
     name = "__PROJECT_NAME__Tests",
-    minimum_os_version = "12.0",
+    minimum_os_version = "13.0",
     test_host = "//:__PROJECT_NAME__",
     visibility = [
         "//visibility:public",
@@ -18,7 +18,7 @@ ios_unit_test(
 
 ios_ui_test(
     name = "__PROJECT_NAME__UITests",
-    minimum_os_version = "12.0",
+    minimum_os_version = "13.0",
     test_host = "//:__PROJECT_NAME__",
     visibility = [
         "//visibility:public",
