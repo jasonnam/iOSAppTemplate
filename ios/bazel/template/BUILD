@@ -8,7 +8,7 @@ load(
 )
 
 ios_application(
-    name = "--PROJECT_NAME--",
+    name = "__PROJECT_NAME__",
     bundle_id = select({
         ":release": "--BUNDLE_ID--",
         ":adhoc": "--BUNDLE_ID---AdHoc",
@@ -19,7 +19,7 @@ ios_application(
         "ipad",
     ],
     infoplists = [
-        "Info.plist",
+        "InfoPlists/__PROJECT_NAME__-Info.plist",
     ],
     minimum_os_version = "12.0",
     provisioning_profile = select({
@@ -32,7 +32,7 @@ ios_application(
         "//visibility:public",
     ],
     deps = [
-        "//Sources/Main",
+        "//Sources/__PROJECT_NAME__",
     ],
 )
 
