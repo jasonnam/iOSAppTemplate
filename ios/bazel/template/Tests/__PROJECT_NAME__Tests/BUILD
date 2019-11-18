@@ -4,7 +4,7 @@ load(
 )
 
 swift_library(
-    name = "MainTests",
+    name = "__PROJECT_NAME__Tests",
     srcs = glob([
         "**/*.swift",
     ]),
@@ -12,6 +12,6 @@ swift_library(
         "//Tests:__pkg__",
     ],
     deps = [
-        "//Sources/Main",
+        "//Sources/__PROJECT_NAME__",
     ],
 )
