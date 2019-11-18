@@ -4,13 +4,13 @@ load(
 )
 
 ios_unit_test(
-    name = "--PROJECT_NAME--Tests",
+    name = "__PROJECT_NAME__Tests",
     minimum_os_version = "12.0",
-    test_host = "//Sources:--PROJECT_NAME--",
+    test_host = "//:__PROJECT_NAME__",
     visibility = [
         "//visibility:public",
     ],
     deps = [
-        "//Tests/MainTests",
+        "//Tests/__PROJECT_NAME__Tests",
     ],
 )
