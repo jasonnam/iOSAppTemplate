@@ -1,4 +1,4 @@
 /bazel-*
 /*.tulsiproj/*.tulsiconf-user
 /*.xcodeproj
-*.mobileprovision
+/CodeSigning/*.mobileprovision
