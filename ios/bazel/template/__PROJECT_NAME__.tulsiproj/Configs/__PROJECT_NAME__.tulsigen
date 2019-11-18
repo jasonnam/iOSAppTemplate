@@ -48,7 +48,7 @@
       "p" : "$(inherited)"
     }
   },
-  "projectName" : "--PROJECT_NAME--",
+  "projectName" : "__PROJECT_NAME__",
   "sourceFilters" : [
     "Sources/...",
     "Tests/...",
