@@ -9,6 +9,6 @@ swift_library(
         "*.swift",
     ]),
     visibility = [
-        "//:__PROJECT_NAME__Tests",
+        "//:__pkg__",
     ],
 )
