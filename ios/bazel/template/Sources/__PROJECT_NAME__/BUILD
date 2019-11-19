@@ -11,4 +11,7 @@ swift_library(
     visibility = [
         "//:__pkg__",
     ],
+    deps = [
+        "@AppDelegate",
+    ],
 )
