@@ -1,6 +1,6 @@
 {
   "additionalFilePaths" : [
-
+    "BUILD"
   ],
   "buildTargets" : [
     "//:__PROJECT_NAME__"
