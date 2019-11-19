@@ -5,11 +5,10 @@ load(
 
 swift_library(
     name = "__PROJECT_NAME__",
+    srcs = glob([
+        "AppDelegate/*.swift",
+    ]),
     visibility = [
         "//:__pkg__",
-        "//Tests/__PROJECT_NAME__Tests:__pkg__",
-    ],
-    deps = [
-        "//Sources/__PROJECT_NAME__/AppDelegate",
     ],
 )
