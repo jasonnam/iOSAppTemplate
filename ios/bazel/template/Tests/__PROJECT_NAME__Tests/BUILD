@@ -6,12 +6,9 @@ load(
 swift_library(
     name = "__PROJECT_NAME__Tests",
     srcs = glob([
-        "**/*.swift",
+        "*.swift",
     ]),
     visibility = [
-        "//Tests:__pkg__",
-    ],
-    deps = [
-        "//Sources/__PROJECT_NAME__",
+        "//:__PROJECT_NAME__Tests",
     ],
 )
