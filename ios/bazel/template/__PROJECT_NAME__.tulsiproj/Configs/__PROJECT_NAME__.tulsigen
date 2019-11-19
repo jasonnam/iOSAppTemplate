@@ -1,11 +1,9 @@
 {
   "additionalFilePaths" : [
-    "Sources/BUILD"
+
   ],
   "buildTargets" : [
-    "//:__PROJECT_NAME__",
-    "//Tests:__PROJECT_NAME__Tests",
-    "//Tests:__PROJECT_NAME__UITests"
+    "//:__PROJECT_NAME__"
   ],
   "optionSet" : {
     "BazelBuildOptionsDebug" : {
@@ -50,7 +48,7 @@
   },
   "projectName" : "__PROJECT_NAME__",
   "sourceFilters" : [
-    "Sources/...",
-    "Tests/...",
+    "InfoPlists/...",
+    "Sources/..."
   ]
 }
