@@ -5,7 +5,7 @@ load(
 
 git_repository(
     name = "build_bazel_rules_apple",
-    commit = "61f844f7d7fd6b3f56428c0b1b115ae35d443573",
+    commit = "4715a6d6abf8a48b71ed6295ee6b370a7634461b",
     remote = "https://github.com/bazelbuild/rules_apple.git",
 )
 
