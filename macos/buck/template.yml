@@ -1,0 +1,8 @@
+description: macOS App Buck Template
+variables:
+  - name: PROJECT_NAME
+    displayName: Project Name
+  - name: BUNDLE_ID
+    displayName: Bundle ID
+posthooks:
+  - git_init.sh

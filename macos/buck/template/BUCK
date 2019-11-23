@@ -1,0 +1,72 @@
+MACOSX_DEPLOYMENT_TARGET = "10.15"
+
+configuration = read_config("project", "configuration")
+
+if configuration == "debug":
+    PRODUCT_BUNDLE_IDENTIFIER = "__BUNDLE_ID__-Debug"
+elif configuration == "adhoc":
+    PRODUCT_BUNDLE_IDENTIFIER = "__BUNDLE_ID__-AdHoc"
+elif configuration == "release":
+    PRODUCT_BUNDLE_IDENTIFIER = "__BUNDLE_ID__"
+else:
+    fail("Unsupported configuration: {}".format(configuration))
+
+apple_bundle(
+    name = "__PROJECT_NAME__",
+    extension = "app",
+    binary = ":__PROJECT_NAME__Binary",
+    info_plist = "InfoPlists/__PROJECT_NAME__-Info.plist",
+    info_plist_substitutions = {
+        "MACOSX_DEPLOYMENT_TARGET": MACOSX_DEPLOYMENT_TARGET,
+        "PRODUCT_BUNDLE_IDENTIFIER": PRODUCT_BUNDLE_IDENTIFIER,
+        "CODE_SIGN_ENTITLEMENTS": "CodeSigning/__PROJECT_NAME__.entitlements",
+    },
+)
+
+apple_binary(
+    name = "__PROJECT_NAME__Binary",
+    srcs = [
+        "Sources/__PROJECT_NAME__/main.swift",
+        "Sources/__PROJECT_NAME__/AppDelegate/AppDelegateMain.swift",
+    ],
+    frameworks = [
+        "$SDKROOT/System/Library/Frameworks/Cocoa.framework",
+    ],
+    configs = {
+        "Debug": {
+            "SDKROOT": "macosx",
+            "MACOSX_DEPLOYMENT_TARGET": MACOSX_DEPLOYMENT_TARGET,
+            "PRODUCT_BUNDLE_IDENTIFIER": PRODUCT_BUNDLE_IDENTIFIER,
+            "SWIFT_COMPILATION_MODE": "singlefile",
+            "SWIFT_OPTIMIZATION_LEVEL": "-Onone",
+            "DEBUG_INFORMATION_FORMAT": "dwarf",
+            "CODE_SIGN_ENTITLEMENTS": "CodeSigning/__PROJECT_NAME__.entitlements",
+        },
+        "Profile": {
+            "SDKROOT": "macosx",
+            "MACOSX_DEPLOYMENT_TARGET": MACOSX_DEPLOYMENT_TARGET,
+            "PRODUCT_BUNDLE_IDENTIFIER": PRODUCT_BUNDLE_IDENTIFIER,
+            "SWIFT_COMPILATION_MODE": "wholemodule",
+            "SWIFT_OPTIMIZATION_LEVEL": "-O",
+            "DEBUG_INFORMATION_FORMAT": "dwarf-with-dsym",
+            "CODE_SIGN_ENTITLEMENTS": "CodeSigning/__PROJECT_NAME__.entitlements",
+        },
+        "Release": {
+            "SDKROOT": "macosx",
+            "MACOSX_DEPLOYMENT_TARGET": MACOSX_DEPLOYMENT_TARGET,
+            "PRODUCT_BUNDLE_IDENTIFIER": PRODUCT_BUNDLE_IDENTIFIER,
+            "SWIFT_COMPILATION_MODE": "wholemodule",
+            "SWIFT_OPTIMIZATION_LEVEL": "-O",
+            "DEBUG_INFORMATION_FORMAT": "dwarf-with-dsym",
+            "CODE_SIGN_ENTITLEMENTS": "CodeSigning/__PROJECT_NAME__.entitlements",
+        },
+    },
+)
+
+xcode_workspace_config(
+    name = "workspace",
+    src_target = ":__PROJECT_NAME__",
+    action_config_names = {
+        "profile": "Profile",
+    },
+)

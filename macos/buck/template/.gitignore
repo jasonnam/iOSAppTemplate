@@ -1,0 +1,6 @@
+/.buckconfig.local
+/.buckd
+/buck-out
+/__PROJECT_NAME__.xcworkspace
+*.xcodeproj
+/CodeSigning/*.mobileprovision

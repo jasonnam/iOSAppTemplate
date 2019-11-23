@@ -1,0 +1,11 @@
+[cxx]
+  default_platform = macosx-x86_64
+[swift]
+  version = 5
+[apple]
+  should_link_system_swift = false
+  provisioning_profile_search_path = CodeSigning
+[project]
+  ide = xcode
+  ide_force_kill = always
+  configuration = debug
