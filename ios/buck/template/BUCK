@@ -1,0 +1,55 @@
+load("//Configurations:xcode_build_settings.bzl", "xcode_build_settings")
+
+DEPLOYMENT_TARGET = "13.0"
+BUNDLE_IDENTIFIER_DEBUG = "__BUNDLE_ID__-Debug"
+BUNDLE_IDENTIFIER_ADHOC = "__BUNDLE_ID__-AdHoc"
+BUNDLE_IDENTIFIER_RELEASE = "__BUNDLE_ID__"
+
+configuration = read_config("project", "configuration")
+
+if configuration == "debug":
+    BUNDLE_IDENTIFIER = BUNDLE_IDENTIFIER_DEBUG
+elif configuration == "adhoc":
+    BUNDLE_IDENTIFIER = BUNDLE_IDENTIFIER_ADHOC
+elif configuration == "release":
+    BUNDLE_IDENTIFIER = BUNDLE_IDENTIFIER_RELEASE
+else:
+    fail("Unsupported configuration: {}".format(configuration))
+
+apple_bundle(
+    name = "__PROJECT_NAME__",
+    extension = "app",
+    binary = ":__PROJECT_NAME__Binary",
+    info_plist = "InfoPlists/__PROJECT_NAME__-Info.plist",
+    info_plist_substitutions = {
+        "PRODUCT_BUNDLE_IDENTIFIER": BUNDLE_IDENTIFIER,
+    },
+)
+
+apple_binary(
+    name = "__PROJECT_NAME__Binary",
+    srcs = [
+        "Sources/__PROJECT_NAME__/AppDelegate/AppDelegateMain.swift",
+    ],
+    frameworks = [
+        "$SDKROOT/System/Library/Frameworks/UIKit.framework",
+    ],
+    configs = xcode_build_settings(
+        bundle_id_debug = BUNDLE_IDENTIFIER_DEBUG,
+        bundle_id_release = BUNDLE_IDENTIFIER_RELEASE,
+        deployment_target = DEPLOYMENT_TARGET,
+        development_team = "",
+        code_sign_identity_debug = "",
+        code_sign_identity_release = "",
+        provisioning_profile_specifier_debug = "",
+        provisioning_profile_specifier_release = "",
+    ),
+)
+
+xcode_workspace_config(
+    name = "workspace",
+    src_target = ":__PROJECT_NAME__",
+    action_config_names = {
+        "profile": "Profile",
+    },
+)

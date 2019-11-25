@@ -1,0 +1,10 @@
+[cxx]
+  default_platform = iphonesimulator-x86_64
+[swift]
+  version = 5
+[apple]
+  should_link_system_swift = false
+[project]
+  ide = xcode
+  ide_force_kill = always
+  configuration = debug
