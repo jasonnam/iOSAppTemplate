@@ -47,6 +47,7 @@ def _xcode_build_settings(
         provisioning_profile_specifier):
     return {
         "SDKROOT": "iphoneos",
+        "TARGETED_DEVICE_FAMILY": "1,2",
         "PRODUCT_BUNDLE_IDENTIFIER": bundle_id,
         "IPHONEOS_DEPLOYMENT_TARGET": deployment_target,
         "SWIFT_COMPILATION_MODE": "wholemodule" if optimize else "singlefile",
