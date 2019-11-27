@@ -66,7 +66,8 @@ apple_binary(
 
 xcode_workspace_config(
     name = "workspace",
-    src_target = ":__PROJECT_NAME__",
+    workspace_name = "__PROJECT_NAME__",
+    src_target = ":__PROJECT_NAME__Bundle",
     action_config_names = {
         "profile": "Profile",
     },
