@@ -6,6 +6,7 @@
   iphonesimulator_target_sdk_version = 13.0
   iphoneos_target_sdk_version = 13.0
   should_link_system_swift = false
+  xctool_default_destination_specifier = platform=iOS Simulator,OS=latest
 [project]
   ide = xcode
   ide_force_kill = always
