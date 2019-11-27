@@ -8,12 +8,9 @@ load(
 )
 load(
     "//Configurations:code_sign.bzl",
-    "CODE_SIGN_IDENTITY_DEBUG",
-    "CODE_SIGN_IDENTITY_RELEASE",
-    "DEVELOPMENT_TEAM_DEBUG",
-    "DEVELOPMENT_TEAM_RELEASE",
-    "PROVISIONING_PROFILE_SPECIFIER_DEBUG",
-    "PROVISIONING_PROFILE_SPECIFIER_RELEASE",
+    "DEVELOPMENT_TEAM",
+    "CODE_SIGN_IDENTITY",
+    "PROVISIONING_PROFILE_SPECIFIER",
 )
 
 BUNDLE_IDENTIFIER_DEBUG = "__BUNDLE_ID__-Debug"
@@ -53,14 +50,10 @@ apple_binary(
         "$SDKROOT/System/Library/Frameworks/UIKit.framework",
     ],
     configs = xcode_build_settings(
-        bundle_identifier_debug = BUNDLE_IDENTIFIER_DEBUG,
-        bundle_identifier_release = BUNDLE_IDENTIFIER_RELEASE,
-        development_team_debug = DEVELOPMENT_TEAM_DEBUG,
-        development_team_release = DEVELOPMENT_TEAM_RELEASE,
-        code_sign_identity_debug = CODE_SIGN_IDENTITY_DEBUG,
-        code_sign_identity_release = CODE_SIGN_IDENTITY_RELEASE,
-        provisioning_profile_specifier_debug = PROVISIONING_PROFILE_SPECIFIER_DEBUG,
-        provisioning_profile_specifier_release = PROVISIONING_PROFILE_SPECIFIER_RELEASE,
+        bundle_identifier = BUNDLE_IDENTIFIER,
+        development_team = DEVELOPMENT_TEAM,
+        code_sign_identity = CODE_SIGN_IDENTITY,
+        provisioning_profile_specifier = PROVISIONING_PROFILE_SPECIFIER,
     ),
 )
 

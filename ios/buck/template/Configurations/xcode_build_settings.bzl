@@ -1,37 +1,25 @@
 def xcode_build_settings(
-        bundle_identifier_debug = "",
-        bundle_identifier_release = "",
-        development_team_debug = "",
-        development_team_release = "",
-        code_sign_identity_debug = "",
-        code_sign_identity_release = "",
-        provisioning_profile_specifier_debug = "",
-        provisioning_profile_specifier_release = ""):
+        bundle_identifier = "",
+        development_team = "",
+        code_sign_identity = "",
+        provisioning_profile_specifier = ""):
     return {
         "Debug": _xcode_build_settings(
-            bundle_identifier = bundle_identifier_debug,
+            bundle_identifier = bundle_identifier,
             optimize = False,
             dsym = False,
-            development_team = development_team_debug,
-            code_sign_identity = code_sign_identity_debug,
-            provisioning_profile_specifier = provisioning_profile_specifier_debug,
+            development_team = development_team,
+            code_sign_identity = code_sign_identity,
+            provisioning_profile_specifier = provisioning_profile_specifier,
         ),
         "Profile": _xcode_build_settings(
-            bundle_identifier = bundle_identifier_debug,
+            bundle_identifier = bundle_identifier,
             optimize = True,
             dsym = True,
-            development_team = development_team_debug,
-            code_sign_identity = code_sign_identity_debug,
-            provisioning_profile_specifier = provisioning_profile_specifier_debug,
-        ),
-        "Release": _xcode_build_settings(
-            bundle_identifier = bundle_identifier_release,
-            optimize = True,
-            dsym = True,
-            development_team = development_team_release,
-            code_sign_identity = code_sign_identity_release,
-            provisioning_profile_specifier = provisioning_profile_specifier_release,
-        ),
+            development_team = development_team,
+            code_sign_identity = code_sign_identity,
+            provisioning_profile_specifier = provisioning_profile_specifier,
+        )
     }
 
 def _xcode_build_settings(
