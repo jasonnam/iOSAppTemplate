@@ -44,7 +44,10 @@ apple_bundle(
 apple_binary(
     name = "__PROJECT_NAME__Binary",
     srcs = [
-        "Sources/__PROJECT_NAME__/AppDelegate/AppDelegateMain.swift",
+        "Dummy.swift",
+    ],
+    deps = [
+        "//Sources/__PROJECT_NAME__:__PROJECT_NAME__",
     ],
     frameworks = [
         "$SDKROOT/System/Library/Frameworks/UIKit.framework",
