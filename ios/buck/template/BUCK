@@ -1,6 +1,5 @@
 load("//Configurations:xcode_build_settings.bzl", "xcode_build_settings")
 
-DEPLOYMENT_TARGET = "13.0"
 BUNDLE_IDENTIFIER_DEBUG = "__BUNDLE_ID__-Debug"
 BUNDLE_IDENTIFIER_ADHOC = "__BUNDLE_ID__-AdHoc"
 BUNDLE_IDENTIFIER_RELEASE = "__BUNDLE_ID__"
@@ -37,7 +36,6 @@ apple_binary(
     configs = xcode_build_settings(
         bundle_id_debug = BUNDLE_IDENTIFIER_DEBUG,
         bundle_id_release = BUNDLE_IDENTIFIER_RELEASE,
-        deployment_target = DEPLOYMENT_TARGET,
         development_team = "",
         code_sign_identity_debug = "",
         code_sign_identity_release = "",

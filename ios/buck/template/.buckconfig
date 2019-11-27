@@ -3,6 +3,8 @@
 [swift]
   version = 5
 [apple]
+  iphonesimulator_target_sdk_version = 13.0
+  iphoneos_target_sdk_version = 13.0
   should_link_system_swift = false
 [project]
   ide = xcode

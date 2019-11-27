@@ -1,7 +1,6 @@
 def xcode_build_settings(
         bundle_id_debug,
         bundle_id_release,
-        deployment_target,
         development_team,
         code_sign_identity_debug,
         code_sign_identity_release,
@@ -10,7 +9,6 @@ def xcode_build_settings(
     return {
         "Debug": _xcode_build_settings(
             bundle_id = bundle_id_debug,
-            deployment_target = deployment_target,
             optimize = False,
             dsym = False,
             development_team = development_team,
@@ -19,7 +17,6 @@ def xcode_build_settings(
         ),
         "Profile": _xcode_build_settings(
             bundle_id = bundle_id_debug,
-            deployment_target = deployment_target,
             optimize = True,
             dsym = True,
             development_team = development_team,
@@ -28,7 +25,6 @@ def xcode_build_settings(
         ),
         "Release": _xcode_build_settings(
             bundle_id = bundle_id_release,
-            deployment_target = deployment_target,
             optimize = True,
             dsym = True,
             development_team = development_team,
@@ -39,7 +35,6 @@ def xcode_build_settings(
 
 def _xcode_build_settings(
         bundle_id,
-        deployment_target,
         optimize,
         dsym,
         development_team,
@@ -49,7 +44,6 @@ def _xcode_build_settings(
         "SDKROOT": "iphoneos",
         "TARGETED_DEVICE_FAMILY": "1,2",
         "PRODUCT_BUNDLE_IDENTIFIER": bundle_id,
-        "IPHONEOS_DEPLOYMENT_TARGET": deployment_target,
         "SWIFT_COMPILATION_MODE": "wholemodule" if optimize else "singlefile",
         "SWIFT_OPTIMIZATION_LEVEL": "-O" if optimize else "-Onone",
         "DEBUG_INFORMATION_FORMAT": "dwarf-with-dsym" if dsym else "dwarf",
