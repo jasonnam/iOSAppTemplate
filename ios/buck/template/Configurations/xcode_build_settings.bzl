@@ -1,6 +1,6 @@
 def xcode_build_settings(
-        bundle_id_debug = "",
-        bundle_id_release = "",
+        bundle_identifier_debug = "",
+        bundle_identifier_release = "",
         development_team_debug = "",
         development_team_release = "",
         code_sign_identity_debug = "",
@@ -9,7 +9,7 @@ def xcode_build_settings(
         provisioning_profile_specifier_release = ""):
     return {
         "Debug": _xcode_build_settings(
-            bundle_id = bundle_id_debug,
+            bundle_identifier = bundle_identifier_debug,
             optimize = False,
             dsym = False,
             development_team = development_team_debug,
@@ -17,7 +17,7 @@ def xcode_build_settings(
             provisioning_profile_specifier = provisioning_profile_specifier_debug,
         ),
         "Profile": _xcode_build_settings(
-            bundle_id = bundle_id_debug,
+            bundle_identifier = bundle_identifier_debug,
             optimize = True,
             dsym = True,
             development_team = development_team_debug,
@@ -25,7 +25,7 @@ def xcode_build_settings(
             provisioning_profile_specifier = provisioning_profile_specifier_debug,
         ),
         "Release": _xcode_build_settings(
-            bundle_id = bundle_id_release,
+            bundle_identifier = bundle_identifier_release,
             optimize = True,
             dsym = True,
             development_team = development_team_release,
@@ -35,7 +35,7 @@ def xcode_build_settings(
     }
 
 def _xcode_build_settings(
-        bundle_id,
+        bundle_identifier,
         optimize,
         dsym,
         development_team,
@@ -44,7 +44,7 @@ def _xcode_build_settings(
     return {
         "SDKROOT": "iphoneos",
         "TARGETED_DEVICE_FAMILY": "1,2",
-        "PRODUCT_BUNDLE_IDENTIFIER": bundle_id,
+        "PRODUCT_BUNDLE_IDENTIFIER": bundle_identifier,
         "SWIFT_COMPILATION_MODE": "wholemodule" if optimize else "singlefile",
         "SWIFT_OPTIMIZATION_LEVEL": "-O" if optimize else "-Onone",
         "DEBUG_INFORMATION_FORMAT": "dwarf-with-dsym" if dsym else "dwarf",
