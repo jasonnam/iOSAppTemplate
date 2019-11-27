@@ -1,12 +1,12 @@
 def xcode_build_settings(
-        bundle_id_debug,
-        bundle_id_release,
-        development_team_debug,
-        development_team_release,
-        code_sign_identity_debug,
-        code_sign_identity_release,
-        provisioning_profile_specifier_debug,
-        provisioning_profile_specifier_release):
+        bundle_id_debug = "",
+        bundle_id_release = "",
+        development_team_debug = "",
+        development_team_release = "",
+        code_sign_identity_debug = "",
+        code_sign_identity_release = "",
+        provisioning_profile_specifier_debug = "",
+        provisioning_profile_specifier_release = ""):
     return {
         "Debug": _xcode_build_settings(
             bundle_id = bundle_id_debug,

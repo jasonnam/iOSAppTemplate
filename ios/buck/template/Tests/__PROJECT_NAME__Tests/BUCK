@@ -1,0 +1,30 @@
+load(
+    "//Configurations:xcode_build_settings.bzl",
+    "xcode_build_settings",
+)
+load(
+    "//Configurations:code_sign.bzl",
+    "CODE_SIGN_IDENTITY_DEBUG",
+    "DEVELOPMENT_TEAM_DEBUG",
+)
+
+apple_test(
+    name = "__PROJECT_NAME__Tests",
+    srcs = glob([
+        "*.swift",
+    ]),
+    deps = [
+        "//Sources/__PROJECT_NAME__:__PROJECT_NAME__",
+    ],
+    frameworks = [
+        "$PLATFORM_DIR/Developer/Library/Frameworks/XCTest.framework",
+    ],
+    info_plist = "Info.plist",
+    configs = xcode_build_settings(
+        development_team_debug = DEVELOPMENT_TEAM_DEBUG,
+        code_sign_identity_debug = CODE_SIGN_IDENTITY_DEBUG,
+    ),
+    visibility = [
+        "//:",
+    ],
+)
