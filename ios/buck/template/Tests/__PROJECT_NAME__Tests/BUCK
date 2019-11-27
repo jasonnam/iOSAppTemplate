@@ -8,7 +8,7 @@ load(
     "DEVELOPMENT_TEAM_DEBUG",
 )
 
-BUNDLE_IDENTIFIER = "__BUNDLE_ID__.Tests"
+BUNDLE_IDENTIFIER = "__BUNDLE_ID__-Debug.Tests"
 
 apple_test(
     name = "__PROJECT_NAME__Tests",
