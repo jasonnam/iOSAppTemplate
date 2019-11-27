@@ -8,6 +8,8 @@ load(
     "DEVELOPMENT_TEAM_DEBUG",
 )
 
+BUNDLE_IDENTIFIER = "__BUNDLE_ID__.Tests"
+
 apple_test(
     name = "__PROJECT_NAME__Tests",
     srcs = glob([
@@ -20,7 +22,11 @@ apple_test(
         "$PLATFORM_DIR/Developer/Library/Frameworks/XCTest.framework",
     ],
     info_plist = "Info.plist",
+    info_plist_substitutions = {
+        "PRODUCT_BUNDLE_IDENTIFIER": BUNDLE_IDENTIFIER,
+    },
     configs = xcode_build_settings(
+        bundle_identifier_debug = BUNDLE_IDENTIFIER,
         development_team_debug = DEVELOPMENT_TEAM_DEBUG,
         code_sign_identity_debug = CODE_SIGN_IDENTITY_DEBUG,
     ),
