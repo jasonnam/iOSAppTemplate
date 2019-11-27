@@ -32,7 +32,7 @@ else:
     fail("Unsupported configuration: {}".format(configuration))
 
 apple_bundle(
-    name = "__PROJECT_NAME__",
+    name = "__PROJECT_NAME__Bundle",
     extension = "app",
     binary = ":__PROJECT_NAME__Binary",
     info_plist = "InfoPlists/__PROJECT_NAME__-Info.plist",

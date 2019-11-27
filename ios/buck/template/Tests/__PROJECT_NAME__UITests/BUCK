@@ -13,7 +13,7 @@ BUNDLE_IDENTIFIER = "__BUNDLE_ID__-Debug.UITests"
 apple_test(
     name = "__PROJECT_NAME__UITests",
     is_ui_test = True,
-    ui_test_target_app = "//:__PROJECT_NAME__",
+    ui_test_target_app = "//:__PROJECT_NAME__Bundle",
     srcs = glob([
         "*.swift",
     ]),
