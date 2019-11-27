@@ -1,0 +1,19 @@
+load(
+    "//Configurations:apple_library.bzl",
+    "swift_compiler_flags",
+)
+
+apple_library(
+    name = "__PROJECT_NAME__",
+    srcs = [
+        "AppDelegate/AppDelegateMain.swift",
+    ],
+    frameworks = [
+        "$SDKROOT/System/Library/Frameworks/UIKit.framework",
+    ],
+    swift_compiler_flags = swift_compiler_flags(),
+    visibility = [
+        "//:",
+        "//Tests/__PROJECT_NAME__Tests:",
+    ],
+)
