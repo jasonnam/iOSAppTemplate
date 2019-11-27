@@ -6,6 +6,7 @@ load(
     "//Configurations:code_sign.bzl",
     "CODE_SIGN_IDENTITY_DEBUG",
     "DEVELOPMENT_TEAM_DEBUG",
+    "PROVISIONING_PROFILE_SPECIFIER_UI_TESTS",
 )
 
 BUNDLE_IDENTIFIER = "__BUNDLE_ID__-Debug.UITests"
@@ -28,6 +29,7 @@ apple_test(
         bundle_identifier_debug = BUNDLE_IDENTIFIER,
         development_team_debug = DEVELOPMENT_TEAM_DEBUG,
         code_sign_identity_debug = CODE_SIGN_IDENTITY_DEBUG,
+        provisioning_profile_specifier_debug = PROVISIONING_PROFILE_SPECIFIER_UI_TESTS,
     ),
     visibility = [
         "//:",
