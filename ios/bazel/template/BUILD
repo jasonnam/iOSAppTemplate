@@ -13,8 +13,8 @@ ios_application(
     name = "__PROJECT_NAME__",
     bundle_id = select({
         ":release": "--BUNDLE_ID--",
-        ":adhoc": "--BUNDLE_ID---AdHoc",
-        ":debug": "--BUNDLE_ID---Debug",
+        ":adhoc": "--BUNDLE_ID--.adhoc",
+        ":debug": "--BUNDLE_ID--.debug",
     }),
     families = [
         "iphone",
