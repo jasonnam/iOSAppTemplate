@@ -25,9 +25,9 @@ ios_application(
     ],
     minimum_os_version = "13.0",
     provisioning_profile = select({
-        ":release": "CodeSigning/__PROJECT_NAME__.mobileprovision",
-        ":adhoc": "CodeSigning/__PROJECT_NAME__-AdHoc.mobileprovision",
-        ":debug": "CodeSigning/__PROJECT_NAME__-Debug.mobileprovision",
+        ":release": "CodeSigning/__BUNDLE_ID__.mobileprovision",
+        ":adhoc": "CodeSigning/--BUNDLE_ID--.adhoc.mobileprovision",
+        ":debug": "CodeSigning/--BUNDLE_ID--.debug.mobileprovision",
     }),
     version = ":bundle_version",
     visibility = [
