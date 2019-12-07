@@ -31,6 +31,6 @@ apple_test(
         code_sign_identity = CODE_SIGN_IDENTITY,
     ),
     visibility = [
-        "//:",
+        "//:__PROJECT_NAME__Bundle",
     ],
 )

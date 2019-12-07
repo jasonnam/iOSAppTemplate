@@ -32,6 +32,6 @@ apple_test(
         provisioning_profile_specifier = PROVISIONING_PROFILE_SPECIFIER_UI_TESTS,
     ),
     visibility = [
-        "//:",
+        "//:__PROJECT_NAME__Bundle",
     ],
 )

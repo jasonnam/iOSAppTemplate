@@ -13,7 +13,7 @@ apple_library(
     ],
     swift_compiler_flags = swift_compiler_flags(),
     visibility = [
-        "//:",
-        "//Tests/__PROJECT_NAME__Tests:",
+        "//:__PROJECT_NAME__Binary",
+        "//Tests/__PROJECT_NAME__Tests:__PROJECT_NAME__Tests",
     ],
 )
