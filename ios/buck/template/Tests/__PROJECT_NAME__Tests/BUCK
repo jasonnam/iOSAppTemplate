@@ -8,7 +8,7 @@ load(
     "CODE_SIGN_IDENTITY",
 )
 
-BUNDLE_IDENTIFIER = "__BUNDLE_ID__-Debug.Tests"
+BUNDLE_IDENTIFIER = "__BUNDLE_ID__.debug.tests"
 
 apple_test(
     name = "__PROJECT_NAME__Tests",

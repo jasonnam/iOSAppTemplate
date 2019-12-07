@@ -9,7 +9,7 @@ load(
     "PROVISIONING_PROFILE_SPECIFIER_UI_TESTS",
 )
 
-BUNDLE_IDENTIFIER = "__BUNDLE_ID__-Debug.UITests"
+BUNDLE_IDENTIFIER = "__BUNDLE_ID__.debug.uitests"
 
 apple_test(
     name = "__PROJECT_NAME__UITests",
