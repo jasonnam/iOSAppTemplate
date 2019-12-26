@@ -8,9 +8,6 @@ apple_library(
     srcs = [
         "AppDelegate/AppDelegateMain.swift",
     ],
-    frameworks = [
-        "$SDKROOT/System/Library/Frameworks/UIKit.framework",
-    ],
     swift_compiler_flags = swift_compiler_flags(),
     visibility = [
         "//:__PROJECT_NAME__Binary",

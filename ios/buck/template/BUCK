@@ -46,9 +46,6 @@ apple_binary(
     deps = [
         "//Sources/__PROJECT_NAME__:__PROJECT_NAME__",
     ],
-    frameworks = [
-        "$SDKROOT/System/Library/Frameworks/UIKit.framework",
-    ],
     configs = xcode_build_settings(
         bundle_identifier = BUNDLE_IDENTIFIER,
         development_team = DEVELOPMENT_TEAM,
