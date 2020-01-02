@@ -2,6 +2,10 @@ load(
     "//Configurations:apple_library.bzl",
     "swift_compiler_flags",
 )
+load(
+    "//Configurations:xcode_build_settings.bzl",
+    "xcode_build_settings",
+)
 
 apple_library(
     name = "__PROJECT_NAME__",
@@ -9,6 +13,7 @@ apple_library(
         "AppDelegate/AppDelegateMain.swift",
     ],
     swift_compiler_flags = swift_compiler_flags(),
+    configs = xcode_build_settings(),
     visibility = [
         "//:__PROJECT_NAME__Binary",
         "//Tests/__PROJECT_NAME__Tests:__PROJECT_NAME__Tests",
